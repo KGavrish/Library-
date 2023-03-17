@@ -1,5 +1,5 @@
-require "/Users/kirillgavris/Desktop/Library/extentions/validations.rb"
-require "/Users/kirillgavris/Desktop/Library/entities/author.rb"
+require "/Users/kirillgavris/Desktop/Library/extentions/validations"
+require "/Users/kirillgavris/Desktop/Library/entities/author"
 
 class Book
     include Validations
@@ -7,7 +7,8 @@ class Book
     attr_reader :title, :author
 
     def initialize(title, author)
-        check_instance("Author", author, ::Author)
+        validate_instance("Author", author, ::Author)
+        check_emptiness(title, author)
 
         @title = title
         @author = author

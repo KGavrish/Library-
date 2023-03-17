@@ -1,15 +1,15 @@
-require "/Users/kirillgavris/Desktop/Library/extentions/validations.rb"
-require "/Users/kirillgavris/Desktop/Library/entities/book.rb"
-require "/Users/kirillgavris/Desktop/Library/entities/reader.rb"
+require "/Users/kirillgavris/Desktop/Library/extentions/validations"
+require "/Users/kirillgavris/Desktop/Library/entities/book"
+require "/Users/kirillgavris/Desktop/Library/entities/reader"
 
 class Order
     include Validations
 
     attr_accessor :book, :reader, :date
 
-    def initialize(book, reader, date = Time.now)
-        check_instance("Book", book, ::Book)
-        check_instance("Reader",reader, ::Reader)
+    def initialize(book, reader, date)
+        validate_instance("Book", book, ::Book)
+        validate_instance("Reader",reader, ::Reader)
         @book = book
         @reader = reader
         @date = date

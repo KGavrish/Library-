@@ -1,9 +1,20 @@
-class Library
+require "/Users/kirillgavris/Desktop/Library/autoload"
 
-    def initialize(author, book, reader, order)
-        @author = author
-        @book = book
-        @reader = reader
-        @order = order
+class Library
+    include FakeDataGenerator
+    include Statistics
+    include Database
+  
+    attr_accessor :authors, :books, :orders, :readers
+  
+    def initialize(authors: [], books: [], orders: [], readers: [])
+        @books = books
+        @orders = orders
+        @readers = readers
+        @authors = authors
+    end
+
+    def statistics_call
+        Statistics.call(self)
     end
 end

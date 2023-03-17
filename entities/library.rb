@@ -7,7 +7,3 @@ class Library
         @order = order
     end
 end
-
-
-
-    

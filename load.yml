@@ -1,0 +1,248 @@
+---
+:authors: |
+  ---
+  - !ruby/object:Author
+    name: Nevada Huels
+    biography: Consectetur quisquam sit molestiae ullam. Incidunt voluptatem cum voluptatibus
+      nesciunt voluptatum consequuntur. Id aspernatur voluptates cumque ipsam quibusdam
+      non. Vero libero minima quod optio eaque excepturi velit illum. Cumque rem qui
+      nesciunt facilis optio odit corporis.
+  - !ruby/object:Author
+    name: Dani Grimes
+    biography: Qui ex soluta veritatis nihil ad accusamus. Possimus rerum aspernatur
+      alias similique. Beatae ipsa iure odit adipisci. Quod sit ab beatae impedit. Dolores
+      quas iusto saepe eveniet pariatur.
+  - !ruby/object:Author
+    name: Rachelle Stiedemann
+    biography: Debitis numquam sunt laboriosam dicta tempore suscipit. Suscipit tenetur
+      laudantium sit ipsam culpa tempora. Eius vel iste perferendis explicabo maiores
+      eos. Fuga facilis laboriosam possimus consectetur aliquid architecto. Sequi exercitationem
+      dolorum qui voluptas ratione praesentium.
+:books: |
+  ---
+  - !ruby/object:Book
+    title: 'Codename: Electric Brains'
+    author: &1 !ruby/object:Author
+      name: Dani Grimes
+      biography: Qui ex soluta veritatis nihil ad accusamus. Possimus rerum aspernatur
+        alias similique. Beatae ipsa iure odit adipisci. Quod sit ab beatae impedit.
+        Dolores quas iusto saepe eveniet pariatur.
+  - !ruby/object:Book
+    title: I Married a Champagne Monster
+    author: *1
+  - !ruby/object:Book
+    title: Ultra Identity
+    author: &2 !ruby/object:Author
+      name: Nevada Huels
+      biography: Consectetur quisquam sit molestiae ullam. Incidunt voluptatem cum voluptatibus
+        nesciunt voluptatum consequuntur. Id aspernatur voluptates cumque ipsam quibusdam
+        non. Vero libero minima quod optio eaque excepturi velit illum. Cumque rem qui
+        nesciunt facilis optio odit corporis.
+  - !ruby/object:Book
+    title: Ultra Blow
+    author: *2
+  - !ruby/object:Book
+    title: Rise of the Electric Men
+    author: !ruby/object:Author
+      name: Rachelle Stiedemann
+      biography: Debitis numquam sunt laboriosam dicta tempore suscipit. Suscipit tenetur
+        laudantium sit ipsam culpa tempora. Eius vel iste perferendis explicabo maiores
+        eos. Fuga facilis laboriosam possimus consectetur aliquid architecto. Sequi
+        exercitationem dolorum qui voluptas ratione praesentium.
+  - !ruby/object:Book
+    title: The Fake Brain
+    author: *2
+:readers: |
+  ---
+  - !ruby/object:Reader
+    name: Carley Friesen
+    email: jeanine_mckenzie@murazik.co.uk
+    city: Pourosfort
+    street: Bartoletti Harbor
+    house: 6231
+  - !ruby/object:Reader
+    name: Willie Zieme
+    email: josef@brown.co.uk
+    city: Bertramland
+    street: Dietrich Wall
+    house: 6829
+  - !ruby/object:Reader
+    name: Marline Jenkins
+    email: nichol.gorczany@cole.com
+    city: Port Fe
+    street: Carry Way
+    house: 3955
+  - !ruby/object:Reader
+    name: Berenice Nader
+    email: amie.hoppe@gutkowski.com
+    city: New Yvoneland
+    street: Franecki Key
+    house: 7628
+  - !ruby/object:Reader
+    name: Alfreda Metz
+    email: fiona.jakubowski@damore.info
+    city: Mantefurt
+    street: Little Junction
+    house: 6256
+  - !ruby/object:Reader
+    name: Katelin Kerluke
+    email: stevie.murphy@jakubowski.co.uk
+    city: Buenaborough
+    street: Sydney Path
+    house: 6245
+  - !ruby/object:Reader
+    name: Elayne Wuckert
+    email: randi@baumbachhackett.info
+    city: Lednerside
+    street: Israel Knoll
+    house: 2253
+  - !ruby/object:Reader
+    name: Edwin Ratke
+    email: christiana.will@jakubowski.name
+    city: O'Reillyfurt
+    street: Dian Well
+    house: 7865
+  - !ruby/object:Reader
+    name: Delores Emard
+    email: elna_moore@lesch.info
+    city: West Phillisbury
+    street: Heathcote Rapid
+    house: 5630
+  - !ruby/object:Reader
+    name: Gerri Pouros
+    email: sueann.conroy@rathhomenick.ca
+    city: Johnsonside
+    street: Tera Forges
+    house: 4441
+:orders: |
+  ---
+  - !ruby/object:Order
+    book: &10 !ruby/object:Book
+      title: Ultra Identity
+      author: &7 !ruby/object:Author
+        name: Nevada Huels
+        biography: Consectetur quisquam sit molestiae ullam. Incidunt voluptatem cum
+          voluptatibus nesciunt voluptatum consequuntur. Id aspernatur voluptates cumque
+          ipsam quibusdam non. Vero libero minima quod optio eaque excepturi velit illum.
+          Cumque rem qui nesciunt facilis optio odit corporis.
+    reader: &11 !ruby/object:Reader
+      name: Alfreda Metz
+      email: fiona.jakubowski@damore.info
+      city: Mantefurt
+      street: Little Junction
+      house: 6256
+    date: 31.03.2023
+  - !ruby/object:Order
+    book: &6 !ruby/object:Book
+      title: 'Codename: Electric Brains'
+      author: &1 !ruby/object:Author
+        name: Dani Grimes
+        biography: Qui ex soluta veritatis nihil ad accusamus. Possimus rerum aspernatur
+          alias similique. Beatae ipsa iure odit adipisci. Quod sit ab beatae impedit.
+          Dolores quas iusto saepe eveniet pariatur.
+    reader: !ruby/object:Reader
+      name: Berenice Nader
+      email: amie.hoppe@gutkowski.com
+      city: New Yvoneland
+      street: Franecki Key
+      house: 7628
+    date: 31.03.2023
+  - !ruby/object:Order
+    book: &2 !ruby/object:Book
+      title: I Married a Champagne Monster
+      author: *1
+    reader: &3 !ruby/object:Reader
+      name: Elayne Wuckert
+      email: randi@baumbachhackett.info
+      city: Lednerside
+      street: Israel Knoll
+      house: 2253
+    date: 31.03.2023
+  - !ruby/object:Order
+    book: *2
+    reader: &5 !ruby/object:Reader
+      name: Willie Zieme
+      email: josef@brown.co.uk
+      city: Bertramland
+      street: Dietrich Wall
+      house: 6829
+    date: 31.03.2023
+  - !ruby/object:Order
+    book: &4 !ruby/object:Book
+      title: Rise of the Electric Men
+      author: !ruby/object:Author
+        name: Rachelle Stiedemann
+        biography: Debitis numquam sunt laboriosam dicta tempore suscipit. Suscipit
+          tenetur laudantium sit ipsam culpa tempora. Eius vel iste perferendis explicabo
+          maiores eos. Fuga facilis laboriosam possimus consectetur aliquid architecto.
+          Sequi exercitationem dolorum qui voluptas ratione praesentium.
+    reader: *3
+    date: 31.03.2023
+  - !ruby/object:Order
+    book: *4
+    reader: *5
+    date: 31.03.2023
+  - !ruby/object:Order
+    book: *6
+    reader: !ruby/object:Reader
+      name: Katelin Kerluke
+      email: stevie.murphy@jakubowski.co.uk
+      city: Buenaborough
+      street: Sydney Path
+      house: 6245
+    date: 31.03.2023
+  - !ruby/object:Order
+    book: &8 !ruby/object:Book
+      title: Ultra Blow
+      author: *7
+    reader: !ruby/object:Reader
+      name: Gerri Pouros
+      email: sueann.conroy@rathhomenick.ca
+      city: Johnsonside
+      street: Tera Forges
+      house: 4441
+    date: 31.03.2023
+  - !ruby/object:Order
+    book: *8
+    reader: *3
+    date: 31.03.2023
+  - !ruby/object:Order
+    book: &12 !ruby/object:Book
+      title: The Fake Brain
+      author: *7
+    reader: &9 !ruby/object:Reader
+      name: Delores Emard
+      email: elna_moore@lesch.info
+      city: West Phillisbury
+      street: Heathcote Rapid
+      house: 5630
+    date: 31.03.2023
+  - !ruby/object:Order
+    book: *8
+    reader: *9
+    date: 31.03.2023
+  - !ruby/object:Order
+    book: *10
+    reader: !ruby/object:Reader
+      name: Marline Jenkins
+      email: nichol.gorczany@cole.com
+      city: Port Fe
+      street: Carry Way
+      house: 3955
+    date: 31.03.2023
+  - !ruby/object:Order
+    book: *2
+    reader: *3
+    date: 31.03.2023
+  - !ruby/object:Order
+    book: *8
+    reader: *9
+    date: 31.03.2023
+  - !ruby/object:Order
+    book: *4
+    reader: *11
+    date: 31.03.2023
+  - !ruby/object:Order
+    book: *12
+    reader: *11
+    date: 31.03.2023
